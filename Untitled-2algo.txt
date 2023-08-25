@@ -1,0 +1,34 @@
+
+PROCEDURE remp_tab(arr)
+VAR
+    i:INTEGER
+BEGIN
+    n=langth_arr[i]
+    FOR i FROM n-1 TO 0 STEP 1  DO
+        wright("give arry continant :",)
+        read(arr[i])
+    END_FOR
+END
+FUNCTION function_name(arr[i]) : INTEGER
+VAR
+    
+BEGIN
+for i FROM 0 TO n-1 STEP 1  DO
+    key = arr[i]
+    j = i - 1
+    while j >= 0 && arr[j] > key DO
+    arr[j + 1] = arr[j]
+    j = j - 1;
+    arr[j + 1] = key
+end_for
+RETURN key ;
+END
+
+
+ALGORITHM Insertion
+VAR
+    i,j,n,key:INTEGER
+    arr : ARRAY_OF INTEGER[n];
+BEGIN
+    resol=key
+END

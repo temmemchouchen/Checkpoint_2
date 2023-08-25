@@ -1,0 +1,43 @@
+PROCEDURE remp_tab(v)
+VAR
+    i:INTEGER
+BEGIN
+    FOR i FROM 1 TO n STEP 1  DO
+        wright("give",i,"v",i+1)
+        read(v[i])
+    END_FOR
+END
+FUNCTION sprod(v1,v2) : INTEGER
+VAR
+    set_declarations
+BEGIN
+    FOR i FROM 1 TO n STEP 1  DO
+        x=x+v1[i]*v2[i]
+    END_FOR
+    RETURN x ;
+END
+FUNCTION praimair(x) : BOOLEAN
+VAR
+    set_declarations
+BEGIN
+    for i FROM 2 to x/2 STEP 1 DO
+    IF x % i = 0
+    return False
+    
+    END_IF   
+    return True
+    END_FOR
+END
+ALGORITHM algorithm_name
+VAR
+    n,i,x: integer
+    v1 : ARRAY_OF integer[n];
+    v2 : ARRAY_OF integer[n];
+    test:BOOLEAN
+BEGIN
+    wright("give table sise")
+    read(n)
+    remp_tab(v1)
+    remp_tab(v2)
+    resol=sprod
+END
